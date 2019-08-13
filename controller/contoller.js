@@ -187,7 +187,7 @@ exports.newContact = (req, res) => {
 	});
 };
 exports.getContactList = (req, res) => {
-	const { id } = req.params;
+	// const { id } = req.params;
 	// console.log(id);
 
 	contacts.find({ userID: req.params.id }, (err, result) => {
